@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light c">
+                    <a class="navbar-brand" href="#"><img src="Images/logo-small.png" alt="Image not found"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="index.html">    <button class="btn  my-2 my-sm-0 bg-danger text-white mr-3" type="submit">Home</button>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="index2.html"><button class="btn  my-2 my-sm-0 text-white mr-3 b " type="submit">API</button></a>
+                          </li>
+                      </ul>
+                      <!-- Your search form -->
+                      <form class="form-inline my-2 my-lg-0" action="results.html" method="GET">
+                        <input id="searchInput" name="query" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    
+                    
+
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- section -->
+    <section >
+        <div class="container" id="border">
+            <div class="row align-items-center">
+                <div class="col text-center ">
+                    <img src="Images/meal-icon.png" class="img-fluid" alt="image not fount">
+                </div>
+                <div class="col mt-5 text-center text-white">
+                    <h3>Welcome to TheMealDB</h3>
+                    <p class="text-center">Welcome to TheMealDB: An open, crowd-sourced database of Recipes from around the world.
+                        We also offer <span > <a href="index2.html" class="bb">a free recipe API</a></span> for anyone wanting to use it, with additional features for subscribers.</p>
+                    <button class="btn b-lg"><img src="Images/download.svg"  width="67px" alt=""></button>
+                    <p>Click button above to upgrade free API to premium for $3
+                        Currently (54 supporters)</p>
+                </div>
+                <div class="col text-center">
+                    <img src="Images/meal-icon.png" class="img-fluid" alt="image not fount">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-white mt-3" id="border">
+            <div class="row">
+                <div class="col text-center">
+                    <form action="results.html" >
+                        <div class="form-group">
+                          <input type="text" class="" id="formGroupExampleInput" placeholder="Search for a Meal">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row  mb-3">
+                <div class="col text-center">
+                    <span><img src="images/meal-icon6.png" alt=""> Total Meals : 302 <img src="images/meal-icon4.png" alt="">Total Ingredients:575 <img src="images/image2.png" alt="">Total Images:302</span>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- to display Latest Meals -->
+    <div class="container">
+        <div class="row">
+            <section id="border" >
+                <h4 class="text-center mt-4 text-white">Latest Meals</h4>
+                <div class="container text-white mb-3">
+                    <div class="row text-center" id="imageContainer1">
+                        <!-- Images will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <!-- to display Popular Ingredients -->
+    <div class="container">
+        <div class="row">
+            <section id="border" >
+                <h4 class="text-center mt-4 text-white">Popular Ingredients</h4>
+                <div class="container text-white mb-3">
+                    <div class="row text-center" id="imageContainer2">
+                        <!-- Images will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- to display Random Meals -->
+    <div class="container">
+        <div class="row">
+            <section id="border" >
+                <h4 class="text-center mt-4 text-white">Random Meals</h4>
+                <div class="container text-white mb-3">
+                    <div class="row text-center" id="imageContainer3">
+                        <!-- Images will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- to display Random Ingredients -->
+       <div class="container">
+        <div class="row">
+            <section id="border" >
+                <h4 class="text-center mt-4 text-white">Random Ingredients</h4>
+                <div class="container text-white mb-3">
+                    <div class="row text-center" id="imageContainer4">
+                        <!-- Images will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <!-- to display Broswer Country-->
+    <div class="container">
+        <div class="row">
+            <section id="border" >
+                <h4 class="text-center mt-4 text-white">Random Meals</h4>
+                <div class="container text-white mb-3">
+                    <div class="row text-center" id="imageContainer5">
+                        <!-- Images will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+ 
+    <!-- Browser Meals -->
+    <div class="container text-center text-white mt-3">
+        <div class="row">
+            <div class="col">
+                <h6>Broswer By Name</h6>
+                <a class="text1" href="common.html"> A /</a>
+                <a class="text1" href="common.html"> B /</a>
+                <a class="text1" href="common.html"> C /</a>
+                <a class="text1" href="common.html"> D /</a>
+                <a class="text1" href="common.html"> E /</a>
+                <a class="text1" href="common.html"> F /</a>
+                <a class="text1" href="common.html"> G /</a>
+                <a class="text1" href="common.html"> H /</a>
+                <a class="text1" href="common.html"> I /</a>
+                <a class="text1" href="common.html"> J /</a>
+                <a class="text1" href="common.html"> K /</a>
+                <a class="text1" href="common.html"> L /</a>
+                <a class="text1" href="common.html"> M /</a>
+                <a class="text1" href="common.html"> N /</a>
+                <a class="text1" href="common.html"> O /</a>
+                <a class="text1" href="common.html"> P /</a>
+                <a class="text1" href="common.html"> Q /</a>
+                <a class="text1" href="common.html"> R /</a>
+                <a class="text1" href="common.html"> S /</a>
+                <a class="text1" href="common.html"> T /</a>
+                <a class="text1" href="common.html"> U /</a>
+                <a class="text1" href="common.html"> V /</a>
+                <a class="text1" href="common.html"> W /</a>
+                <a class="text1" href="common.html"> X /</a>
+                <a class="text1" href="common.html"> Y /</a>
+                <a class="text1" href="common.html"> Z /</a>
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5  p-4 c">
+        <div class="container-fulid text-white text-center ">
+            <div class="row ">
+                <div class="col mt-3">
+                    <h6>© 2023 TheMealDB </h6>
+                    <h6>Proudly built in the UK </h6>
+                </div>
+                <div class="col">
+                    <div class="row ">
+                        <div class="col">
+                           <span><small>Social: <a href="https://www.facebook.com/TheDataDB/"><img src="images/Footer Images/11.png"></a>
+                            <a href="https://twitter.com/TheAudioDB"><img src="images/Footer Images/22.png"></a>
+                            <a href="https://discord.com/invite/pFvgaXV"><img src="images/Footer Images/33.png"></a></small></span> 
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <a href="https://www.thecocktaildb.com/"><img src="images/Footer Images/1.png"></a>
+                            <a href="https://www.theaudiodb.com/"><img src="images/Footer Images/2.png"></a>
+                            <a href="https://www.thesportsdb.com/"><img src="images/Footer Images/3.png"></a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col text-white mt-3">
+                        <span>
+                            <a href="About Section/about.html" class="none">About </a>
+                            <a href="About Section/Faq.html" class="none"> Faq</a>
+                            <a href="About Section/Content.html" class="none">Contact</a>
+                        </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

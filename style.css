@@ -1,0 +1,68 @@
+body{
+    background:  #2d2013;
+}
+.b:hover{
+    background-color:#c52d2f;
+}
+.b-lg{
+    background-color:#ffc439 ;
+    padding: 5px 40px 5px 40px;
+}
+#border{
+    border: none;
+    border-bottom: 3px solid white;
+}
+#brown{
+    color:  #905619 !important ;
+}
+
+
+.none{
+    color:white;
+    margin: 10px;
+}
+.none:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.text{
+    color:#6d3414
+}
+
+.text:hover{
+    color:
+    #d5751a 
+}
+.text1{
+    color:#6d3414;
+    font-size: 20px;
+}
+
+.text1:hover{
+    color:
+    #d5751a ;
+    text-decoration: none;
+}
+.c{
+    background-color: black;
+}
+
+.cc{
+    color: #aa9796;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.bb:hover{
+    color: #6d3414;
+    text-decoration: none !important;
+
+}
+.bb{
+    color: #905619;
+
+}
